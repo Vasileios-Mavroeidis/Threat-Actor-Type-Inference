@@ -1,0 +1,864 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://docs.oasis-open.org/ns/tac:tal#"
+     xml:base="http://docs.oasis-open.org/ns/tac:tal"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:tal="http://docs.oasis-open.org/ns/tac:tal"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:test1="urn:absolute:test1#"
+     xmlns:tal1.0="http://www.intel.com/ontologies/tal/tal1.0#">
+    <owl:Ontology rdf:about="http://docs.oasis-open.org/ns/tac:tal">
+        <owl:versionIRI rdf:resource="http://docs.oasis-open.org/ns/tac:tal/tac:tal1.0"/>
+        <owl:imports rdf:resource="http://docs.oasis-open.org/ns/tac:tal:axioms-vm/tac:tal:axioms-vm-1.0"/>
+        <rdfs:comment xml:lang="en">Threat Actor Classification Ontology based on the Intel Threat Agent Library [Casey, T. (2007). Threat Agent Library Helps Identify Information Security Risks.]</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#commonActions -->
+
+    <owl:AnnotationProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#commonActions"/>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#description -->
+
+    <owl:AnnotationProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasBindingMotivationAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasBindingMotivationAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasMotivationAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasCoMotivationAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasCoMotivationAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasMotivationAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasDefiningAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasDefiningAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasMotivationAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasMotivationAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasMotivationAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasPersonalMotivationAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasPersonalMotivationAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasMotivationAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasSubordinateMotivationAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasSubordinateMotivationAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasMotivationAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Access -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Access">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Anarchist -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Anarchist">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+        <commonActions xml:lang="en">Violence, property destruction, physical business disruption</commonActions>
+        <description xml:lang="en">Someone who rejects all forms of structure, private or public, and acts with few constraints</description>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#BindingMotivation -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#BindingMotivation">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Motivation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#CivilActivist -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#CivilActivist">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#CoMotivation -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#CoMotivation">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Motivation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Competitor -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Competitor">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#CorruptGovernmentOfficial -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#CorruptGovernmentOfficial">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#DataMiner -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#DataMiner">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#DefiningAttribute -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#DefiningAttribute"/>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#DefiningMotivation -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#DefiningMotivation">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Motivation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#DisgruntledEmployee -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#DisgruntledEmployee">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#GovernmentCyberwarrior -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#GovernmentCyberwarrior">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+        <commonActions xml:lang="en">Organizational, infrastructural, and physical business disruption, through network/computing disruption, web hijacking, malware.</commonActions>
+        <description xml:lang="en">State-sponsored attacker with significant resources to affect major disruption on national scale.</description>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#GovernmentSpy -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#GovernmentSpy">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Hostile -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Hostile">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#ThreatActor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#InformationPartner -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#InformationPartner">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#NonHostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#InternalSpy -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#InternalSpy">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#IrrationalIndividual -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#IrrationalIndividual">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#LegalAdversary -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#LegalAdversary">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Limits -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Limits">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Mobster -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Mobster">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Motivation -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Motivation">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#NonHostile -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#NonHostile">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#ThreatActor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Objective -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Objective">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Outcome -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Outcome">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#PersonalMotivation -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#PersonalMotivation">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Motivation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#RadicalActivist -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#RadicalActivist">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#RecklessEmployee -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#RecklessEmployee">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#NonHostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Resources -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Resources">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Sensationalist -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Sensationalist">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Skills -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Skills">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#SubordinateMotivation -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#SubordinateMotivation">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Motivation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Terrorist -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Terrorist">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Thief -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Thief">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#ThreatActor -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#ThreatActor"/>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#UntrainedEmployee -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#UntrainedEmployee">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#NonHostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Vandal -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Vandal">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Vendor -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Vendor">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Hostile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Visibility -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Visibility">
+        <rdfs:subClassOf rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#access:external -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#access:external">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Access"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#access:internal -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#access:internal">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Access"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#limits:codeOfConduct -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#limits:codeOfConduct">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Limits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMajor -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMajor">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Limits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMinor -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMinor">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Limits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#limits:legal -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#limits:legal">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Limits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#motivation:accidental -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#motivation:accidental">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#BindingMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#CoMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#PersonalMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#SubordinateMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#motivation:coercion -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#motivation:coercion">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#BindingMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#CoMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#PersonalMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#SubordinateMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#motivation:disgruntlement -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#motivation:disgruntlement">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#BindingMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#CoMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#PersonalMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#SubordinateMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#motivation:dominance -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#motivation:dominance">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#BindingMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#CoMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#PersonalMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#SubordinateMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#motivation:ideology -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#motivation:ideology">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#BindingMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#CoMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#PersonalMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#SubordinateMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#motivation:notoriety -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#motivation:notoriety">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#BindingMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#CoMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#PersonalMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#SubordinateMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#motivation:organizationalGain -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#motivation:organizationalGain">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#BindingMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#CoMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#PersonalMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#SubordinateMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#motivation:personalFinancialGain -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#motivation:personalFinancialGain">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#BindingMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#CoMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#PersonalMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#SubordinateMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#motivation:personalSatisfaction -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#motivation:personalSatisfaction">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#BindingMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#CoMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#PersonalMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#SubordinateMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#motivation:unpredictable -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#motivation:unpredictable">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#BindingMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#CoMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#DefiningMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#PersonalMotivation"/>
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#SubordinateMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#objective:copy -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#objective:copy">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Objective"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#objective:damage -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#objective:damage">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Objective"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#objective:deny -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#objective:deny">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Objective"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#objective:destroy -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#objective:destroy">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Objective"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#objective:dontCare -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#objective:dontCare">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Objective"/>
+        <description xml:lang="en">The agent does not have a rational plan, or may make a choice opportunistically at the time of attack.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#objective:take -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#objective:take">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Objective"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#outcome:acquisitionOrTheft -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#outcome:acquisitionOrTheft">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#outcome:businessAdvantage -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#outcome:businessAdvantage">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#outcome:damage -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#outcome:damage">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#outcome:embarrassment -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#outcome:embarrassment">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#outcome:techAdvantage -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#outcome:techAdvantage">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#resources:club -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#resources:club">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Resources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#resources:contest -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#resources:contest">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Resources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#resources:government -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#resources:government">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Resources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#resources:individual -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#resources:individual">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Resources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#resources:organization -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#resources:organization">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Resources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#resources:team -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#resources:team">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Resources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#skills:adept -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#skills:adept">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Skills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#skills:minimal -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#skills:minimal">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Skills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#skills:none -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#skills:none">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Skills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#skills:operational -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#skills:operational">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Skills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#visibility:clandestine -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#visibility:clandestine">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Visibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#visibility:covert -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#visibility:covert">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Visibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#visibility:dontCare -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#visibility:dontCare">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Visibility"/>
+        <description xml:lang="en">The agent does not have a rational plan, may make a choice opportunistically at the time of attack, or may not place importance on secrecy.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#visibility:overt -->
+
+    <owl:NamedIndividual rdf:about="http://docs.oasis-open.org/ns/tac:tal#visibility:overt">
+        <rdf:type rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Visibility"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
