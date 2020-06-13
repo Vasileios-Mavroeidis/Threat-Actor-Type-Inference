@@ -1,0 +1,1188 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://docs.oasis-open.org/ns/tac:tal:axioms-vm#"
+     xml:base="http://docs.oasis-open.org/ns/tac:tal:axioms-vm"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://docs.oasis-open.org/ns/tac:tal:axioms-vm">
+        <owl:versionIRI rdf:resource="http://docs.oasis-open.org/ns/tac:tal:axioms-vm/tac:tal:axioms-vm-1.0"/>
+    </owl:Ontology>
+    
+
+    <!-- Author:Vasileios-Mavroeidis -->
+    <!-- Contributor: -->
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Anarchist -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Anarchist">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:external"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:ideology"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMajor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:destroy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:damage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:club"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:none"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:overt"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#CivilActivist -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#CivilActivist">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:external"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:ideology"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMinor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:copy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:embarrassment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:organization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:adept"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:covert"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Competitor -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Competitor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:businessAdvantage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:techAdvantage"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:external"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:organizationalGain"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMinor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:copy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:organization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:adept"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:clandestine"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#CorruptGovernmentOfficial -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#CorruptGovernmentOfficial">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:businessAdvantage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:techAdvantage"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:external"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:personalFinancialGain"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMinor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:deny"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:government"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:adept"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:overt"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#DataMiner -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#DataMiner">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:businessAdvantage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:techAdvantage"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:external"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:organizationalGain"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMinor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:copy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:team"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:adept"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:clandestine"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#DisgruntledEmployee -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#DisgruntledEmployee">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                                <owl:someValuesFrom rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Visibility"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:dontCare"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:damage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:destroy"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:damage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:embarrassment"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:internal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:disgruntlement"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMajor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:individual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:operational"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#GovernmentCyberwarrior -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#GovernmentCyberwarrior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                                <owl:someValuesFrom rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Visibility"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:dontCare"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:damage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:deny"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:destroy"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:damage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:embarrassment"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:external"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:dominance"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMajor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:government"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:adept"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#GovernmentSpy -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#GovernmentSpy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:businessAdvantage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:techAdvantage"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:internal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:ideology"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMajor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:copy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:government"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:adept"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:clandestine"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#InformationPartner -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#InformationPartner">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:damage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:embarrassment"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:internal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:accidental"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:codeOfConduct"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:dontCare"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:individual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:operational"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:clandestine"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#InternalSpy -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#InternalSpy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:acquisitionOrTheft"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:techAdvantage"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:internal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:personalFinancialGain"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMinor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:copy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:organization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:adept"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:clandestine"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#IrrationalIndividual -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#IrrationalIndividual">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:someValuesFrom rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Objective"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:dontCare"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                                <owl:someValuesFrom rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Visibility"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:dontCare"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:damage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:embarrassment"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:external"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:unpredictable"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMajor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:individual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:none"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#LegalAdversary -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#LegalAdversary">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:copy"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:take"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:businessAdvantage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:embarrassment"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:external"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:dominance"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:legal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:organization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:adept"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:overt"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Mobster -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Mobster">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:external"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:organizationalGain"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMajor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:take"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:acquisitionOrTheft"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:organization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:adept"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:covert"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#RadicalActivist -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#RadicalActivist">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:someValuesFrom rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Objective"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:dontCare"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:damage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:embarrassment"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:external"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:ideology"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMinor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:organization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:adept"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:overt"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#RecklessEmployee -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#RecklessEmployee">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:damage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:embarrassment"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:internal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:accidental"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:legal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:dontCare"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:individual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:adept"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:covert"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Sensationalist -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Sensationalist">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:someValuesFrom rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Objective"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:dontCare"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:damage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:embarrassment"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:external"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:notoriety"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMinor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:club"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:minimal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:overt"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Terrorist -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Terrorist">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:damage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:destroy"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:take"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:external"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:ideology"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMajor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:damage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:organization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:adept"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:covert"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Thief -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Thief">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:internal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:personalFinancialGain"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMinor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:take"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:acquisitionOrTheft"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:individual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:none"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:clandestine"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#UntrainedEmployee -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#UntrainedEmployee">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:damage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:embarrassment"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:internal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:accidental"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:codeOfConduct"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:dontCare"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:individual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:minimal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:overt"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Vandal -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Vandal">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:someValuesFrom rdf:resource="http://docs.oasis-open.org/ns/tac:tal#Objective"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:dontCare"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:external"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:dominance"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:extraLegalMinor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:damage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:contest"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:operational"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:covert"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+
+    <!-- http://docs.oasis-open.org/ns/tac:tal#Vendor -->
+
+    <owl:Class rdf:about="http://docs.oasis-open.org/ns/tac:tal#Vendor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:businessAdvantage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasOutcomeAttribute"/>
+                                <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#outcome:techAdvantage"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasAccessAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#access:internal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasDefiningMotivationAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#motivation:organizationalGain"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasLimitsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#limits:legal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasObjectiveAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#objective:copy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasResourcesAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#resources:team"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasSkillsAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#skills:operational"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://docs.oasis-open.org/ns/tac:tal#hasVisibilityAttribute"/>
+                        <owl:hasValue rdf:resource="http://docs.oasis-open.org/ns/tac:tal#visibility:clandestine"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+</rdf:RDF>
+
