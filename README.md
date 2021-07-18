@@ -1,2 +1,1 @@
-# Threat Actor Context and Classification
-A repository that publishes Open Source tools for CTI with a focus on Threat Actor Context and their Classification
+# Axioms for Threat Actor Type Inference based on the Threat Agent Library
